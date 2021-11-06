@@ -241,8 +241,6 @@
 </body>
 </html>
 <script>
-var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
-
    var data = [
    {
     "id": 1,
@@ -543,12 +541,11 @@ function showProducts() {
       
       var title = document.createElement("h2");
       title.textContent = item.title;
-      title.addEventListener("click", function () {
+      anchor.addEventListener("click", function () {
           //console.log(item.id);
-          sibil.push(item)
           console.log(item.id);
-          localStorage.setItem("sibleProduct", JSON.stringify(sibil));
-          window.location.assign("./catelog.html");
+          localStorage.setItem("sibleProduct", JSON.stringify(item.id));
+          window.location.assign("./cateloge.html");
         }) ;
 
       var categ = document.createElement("p");

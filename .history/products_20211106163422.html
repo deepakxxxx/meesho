@@ -545,10 +545,10 @@ function showProducts() {
       title.textContent = item.title;
       title.addEventListener("click", function () {
           //console.log(item.id);
-          sibil.push(item)
+          sibil.push()
           console.log(item.id);
-          localStorage.setItem("sibleProduct", JSON.stringify(sibil));
-          window.location.assign("./catelog.html");
+          localStorage.setItem("sibleProduct", JSON.stringify(item.id));
+          // window.location.assign("./cateloge.html");
         }) ;
 
       var categ = document.createElement("p");

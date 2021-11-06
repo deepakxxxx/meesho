@@ -241,8 +241,6 @@
 </body>
 </html>
 <script>
-var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
-
    var data = [
    {
     "id": 1,
@@ -416,7 +414,7 @@ var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
   },
   {
     "id": 18,
-    "title": "TSHIRT",
+    "title": "SHIRT",
     "category": "TSHIRT",
     "discount":"100% discount on first order",
     "price": "290",
@@ -456,7 +454,7 @@ var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
   },
   {
     "id": 22,
-    "title": "SHIRT",
+    "title": "SPORTS TSHIRT",
     "category": "TSHIRT",
     "discount":"100% discount on first order",
     "price": "800",
@@ -466,7 +464,7 @@ var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
   },
   {
     "id": 23,
-    "title": "BRAND SHIRT",
+    "title": "SPORTS TSHIRT",
     "category": "TSHIRT",
     "discount":"100% discount on first order",
     "price": "194",
@@ -475,7 +473,7 @@ var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
     "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
   },{
     "id": 24,
-    "title": "SHIRT",
+    "title": "SPORTS TSHIRT",
     "category": "TSHIRT",
     "discount":"100% discount on first order",
     "price": "365",
@@ -485,7 +483,7 @@ var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
   },
   {
     "id": 25,
-    "title": "DESIGN SHIRT",
+    "title": "SPORTS TSHIRT",
     "category": "TSHIRT",
     "discount":"100% discount on first order",
     "price": "555",
@@ -495,7 +493,7 @@ var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
   },
   {
     "id": 26,
-    "title": "SHIRT",
+    "title": "SPORTS TSHIRT",
     "category": "TSHIRT",
     "discount":"100% discount on first order",
     "price": "245",
@@ -515,7 +513,7 @@ var sibil = JSON.parse(localStorage.getItem("sibleProduct")) || [];
   },
   {
     "id": 28,
-    "title": "SHIRT",
+    "title": "SPORTS TSHIRT",
     "category": "TSHIRT",
     "discount":"100% discount on first order",
     "price": "159",
@@ -543,13 +541,6 @@ function showProducts() {
       
       var title = document.createElement("h2");
       title.textContent = item.title;
-      title.addEventListener("click", function () {
-          //console.log(item.id);
-          sibil.push(item)
-          console.log(item.id);
-          localStorage.setItem("sibleProduct", JSON.stringify(sibil));
-          window.location.assign("./catelog.html");
-        }) ;
 
       var categ = document.createElement("p");
       categ.textContent = "Free Delivery";
@@ -566,8 +557,6 @@ function showProducts() {
       display.append(mainDiv);
     });
   }
-
-
 </script>
 
 
