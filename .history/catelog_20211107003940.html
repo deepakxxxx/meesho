@@ -385,7 +385,7 @@
     // console.log(product);
     displayItem(product)
    
-    
+    var cartbtn = document.querySelector("#addTocart");
     var cartItem = JSON.parse(localStorage.getItem("cartItems")) || [];
 
     function displayItem(product){
@@ -426,10 +426,9 @@
         var des = document.createElement("h3");
         des.textContent = item.productDescription;
         des.style.color = "gray"
+        
 
-
-       
-
+        
         infor.append(des)
 
       

@@ -385,7 +385,7 @@
     // console.log(product);
     displayItem(product)
    
-    
+    var cartbtn = document.querySelector("#addTocart");
     var cartItem = JSON.parse(localStorage.getItem("cartItems")) || [];
 
     function displayItem(product){
@@ -426,9 +426,12 @@
         var des = document.createElement("h3");
         des.textContent = item.productDescription;
         des.style.color = "gray"
-
-
-       
+        
+        cartbtn.addEventListener("onclick", function () {
+          console.log(item);
+          cartItem.push(item);
+          localStorage.setItem("cartItems", JSON.stringify(cartItem));
+        });
 
         infor.append(des)
 

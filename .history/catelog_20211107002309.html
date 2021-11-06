@@ -332,7 +332,7 @@
 
             </div>
             <div id="addto">
-                <button id="addTocart"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+                <button id="addTo"><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
             </div>
             <div id="similar">
             <h3>5 Similar Products</h3>
@@ -385,13 +385,12 @@
     // console.log(product);
     displayItem(product)
    
-    
-    var cartItem = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+
 
     function displayItem(product){
 
         
-
         
         // console.log(product)
         product.map(function(item,index){
@@ -427,18 +426,10 @@
         des.textContent = item.productDescription;
         des.style.color = "gray"
 
-
-       
-
         infor.append(des)
 
-      
-
         });
-        
     }
-    
-  
     function changecolorf(){
         document.getElementById("btn1").style.backgroundColor = "#EC407A"
     }

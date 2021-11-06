@@ -427,8 +427,13 @@
         des.textContent = item.productDescription;
         des.style.color = "gray"
 
-
-       
+        
+        var cartbtn = document.querySelector("#addTocart");
+        cartbtn.addEventListener("onclick", function () {
+          console.log(item);
+          cartItem.push(item);
+          localStorage.setItem("cartItems", JSON.stringify(cartItem));
+        });
 
         infor.append(des)
 
