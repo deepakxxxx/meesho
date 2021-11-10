@@ -337,7 +337,6 @@ right2.setAttribute("id","addbtn")
 
 var btn2 = document.createElement("button");
 btn2.textContent = "Continue"
-btn2.setAttribute("id","nextpage")
 
 var right3 = document.createElement("div");
 right3.setAttribute("id","limg")
@@ -392,27 +391,20 @@ product.map(function(item,index){
         var price = document.createElement("h3");
         price.textContent = `Rs. ${item.price}`;
       
-        var deleteee = document.getElementById("remov");
-       deleteee.addEventListener("click",function(){
-                  makeDelete(item,index)
-              });
-
-  var addre = document.getElementById("nextpage");
-  addre.addEventListener("click",function(){
-    movetonextpage();
-  });
+      
 
         deta.append(titl,price)
 
   smalllimg.append(img1)
-  
-              function movetonextpage(){
-                window.location.href = "address.html";
-              }
+  var deleteee = document.getElementById("remov");
+       deleteee.addEventListener("click",function(){
+                  makeDelete(item,index)
+              });
+
 
               function makeDelete(item,index){
                 cartItem.splice(index,1)
-             localStorage.setItem("total_list",JSON.stringify(cartItem));
+             localStorage.setItem("total_list",JSON.stringify(cartItem))
              displayItem(cartItem)
           }
 });
@@ -423,7 +415,7 @@ var total = cartItem.reduce(function(acc,cv){
        document.getElementById("oprice").innerHTML = `Rs. ${total}`
        document.getElementById("shownoitem").innerHTML = `<h3>Item${cartItem.length}<h3>`;
        var ordervalue = total-100;
-       document.getElementById("ordetot").textContent = ("Rs."+ordervalue);
+       document.getElementById("ordetot").textContent = ("Rs."+ordervalue) || ("Rs.0");
        
 }
 
