@@ -172,7 +172,7 @@
         </div>
         <div id="bbottom">
         <h3>Sign Up to view your Profile</h3>
-        <form id="myForm">
+        <form id="myform">
             <input id="name" placeholder="NAME"/>
             <br>
             <input id="email" placeholder="EMAIL"/>
@@ -194,28 +194,8 @@
 
         var myForm = document.getElementById('myForm');
 
-    var name = myForm.name.value;
-    var email = myForm.email.value;
-    var password = myForm.password.value;
-
-    // console.log(name,email,password);
-
-
-    var user = {
-        name:name,
-        email:email,
-        password:password,
-        
-    }
-    // console.log(user);
-
-    var arr = JSON.parse(localStorage.getItem('customer_details')) || [];
-     //console.log(arr);
-
-     arr.push(user);
-     console.log(arr);
-    localStorage.setItem('customer_details',JSON.stringify(arr));
-
-    window.location.href = "signin.html";
+    let name = myForm.name.value;
+    let email = myForm.email.value;
+    let password = myForm.password.value;
     }
 </script>

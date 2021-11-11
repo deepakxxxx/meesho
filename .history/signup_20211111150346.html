@@ -198,24 +198,6 @@
     var email = myForm.email.value;
     var password = myForm.password.value;
 
-    // console.log(name,email,password);
-
-
-    var user = {
-        name:name,
-        email:email,
-        password:password,
-        
-    }
-    // console.log(user);
-
-    var arr = JSON.parse(localStorage.getItem('customer_details')) || [];
-     //console.log(arr);
-
-     arr.push(user);
-     console.log(arr);
-    localStorage.setItem('customer_details',JSON.stringify(arr));
-
-    window.location.href = "signin.html";
+    console.log(name,email,password)
     }
 </script>

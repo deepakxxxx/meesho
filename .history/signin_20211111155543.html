@@ -4,11 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
     <title>Document</title>
 </head>
 <style>
-    #top{
+     #top{
         width: 100%;
         height: 70px;
         /* border: 1px solid red; */
@@ -132,7 +131,6 @@
     }
 </style>
 <body>
-    
     <div id="top">
         <div id="left">
          <span><a href="" id="meesho"><img src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png" alt="" rel = "icon" width="40%"></span></a>
@@ -173,49 +171,26 @@
         <div id="bbottom">
         <h3>Sign Up to view your Profile</h3>
         <form id="myForm">
-            <input id="name" placeholder="NAME"/>
+            <input id="name" type="text" placeholder="NAME"/>
             <br>
-            <input id="email" placeholder="EMAIL"/>
+            <input id="email" type="text" placeholder="EMAIL"/>
             <br>
             <input id="password" placeholder="PASSWORD"/>
             <br>
-            <button  id="submit" onclick="signup(event)">CREATE ACCOUNT</button>
+            <button  id="submit" onclick="signup(event)">SIGN IN</button>
         </form>
         </div>
     </div>
 </body>
 </html>
 <script>
-    function signup(e){
+    var user = JSON.parse(localStorage.getItem("customer_details"));
 
-
-        e.preventDefault();
-
-
-        var myForm = document.getElementById('myForm');
-
-    var name = myForm.name.value;
-    var email = myForm.email.value;
-    var password = myForm.password.value;
-
-    // console.log(name,email,password);
-
-
-    var user = {
-        name:name,
-        email:email,
-        password:password,
-        
-    }
     // console.log(user);
-
-    var arr = JSON.parse(localStorage.getItem('customer_details')) || [];
-     //console.log(arr);
-
-     arr.push(user);
-     console.log(arr);
-    localStorage.setItem('customer_details',JSON.stringify(arr));
-
-    window.location.href = "signin.html";
+display();
+    function display(){
+        user.map(function(item){
+            
+        });
     }
 </script>

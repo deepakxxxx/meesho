@@ -209,13 +209,11 @@
     }
     // console.log(user);
 
-    var arr = JSON.parse(localStorage.getItem('customer_details')) || [];
+    var arr = JSON.parse(localStorage.getItem('customer_details'));
      //console.log(arr);
 
      arr.push(user);
      console.log(arr);
     localStorage.setItem('customer_details',JSON.stringify(arr));
-
-    window.location.href = "signin.html";
     }
 </script>
