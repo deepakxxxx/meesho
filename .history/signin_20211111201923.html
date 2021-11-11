@@ -176,51 +176,30 @@
             <br>
             <input id="password" type="password" placeholder="PASSWORD"/>
             <br>
-            <button  id="submit" onclick="signin(event)">SIGN IN</button>
+            <button  id="submit" onclick="signup(event)">SIGN IN</button>
         </form>
         </div>
     </div>
 </body>
 </html>
 <script>
+ var myForm = document.getElementById('myForm');
+console.log()
 
+var email = myForm.email.value;
+var password = myForm.password.value;
 
+console.log(email,password)
 
-
-    var userDetails = JSON.parse(localStorage.getItem("customer_details"));
+    var user = JSON.parse(localStorage.getItem("customer_details"));
 
     // console.log(user);
-    function signin(e){
-       let count = 0;
-       let istrue = false;
-       e.preventDefault();
-
-       
-       let myForm = document.getElementById('myForm');
+display();
+    function display(){
+        user.map(function(item){
+            
  
-       let name = myForm.name.value;
-       let email = myForm.email.value;
-       let password = myForm.password.value;
-       userDetails.map(function(user){
-           count = 0;
-           if ( email == user.email && password == user.password) {
-               istrue = true;
-           }
-
-           
-      
-       });
-      console.log(istrue);
-      if ( istrue){
-        alert("Congratulations!");
-         
-         setTimeout(()=>
-         window.location.href="home.html",1000
-         );
-      }
-      else if ( !istrue){
-        alert("Invailed email and password!!");
-          
-      }
+            
+        });
     }
 </script>

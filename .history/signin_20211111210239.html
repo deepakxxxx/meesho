@@ -176,21 +176,16 @@
             <br>
             <input id="password" type="password" placeholder="PASSWORD"/>
             <br>
-            <button  id="submit" onclick="signin(event)">SIGN IN</button>
+            <button  id="submit" onclick="signup(event)">SIGN IN</button>
         </form>
         </div>
     </div>
 </body>
 </html>
 <script>
-
-
-
-
-    var userDetails = JSON.parse(localStorage.getItem("customer_details"));
-
-    // console.log(user);
-    function signin(e){
+ var myForm = document.getElementById('myForm');
+console.log(myForm)
+console.log(myForm.function signin(e){
        let count = 0;
        let istrue = false;
        e.preventDefault();
@@ -201,7 +196,7 @@
        let name = myForm.name.value;
        let email = myForm.email.value;
        let password = myForm.password.value;
-       userDetails.map(function(user){
+       bussiness_user.forEach(function(user) {
            count = 0;
            if ( email == user.email && password == user.password) {
                istrue = true;
@@ -209,18 +204,34 @@
 
            
       
-       });
+       })
       console.log(istrue);
       if ( istrue){
-        alert("Congratulations!");
+        swal("Congratulations!", "you are right person!", "success");
          
          setTimeout(()=>
-         window.location.href="home.html",1000
+         window.location.href="index.html",2000
          );
       }
       else if ( !istrue){
-        alert("Invailed email and password!!");
+        swal("Oops!", "Invailed email and password!!", "error");
           
       }
+    })
+var email = myForm.email.value;
+var password = myForm.password.value;
+
+
+
+    var user = JSON.parse(localStorage.getItem("customer_details"));
+
+    // console.log(user);
+display();
+    function display(){
+        user.map(function(item){
+            
+ 
+            
+        });
     }
 </script>
