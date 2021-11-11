@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #top{
+        width: 100%;
+        height: 70px;
+        /* border: 1px solid red; */
+        display: flex;
+        
+    }
+    #left{
+        display: flex;
+        width: 55%;
+    }
+    #meesho{
+      text-decoration: none;
+      font-size: 50px;
+      color: #F06292;
+      font-weight: bold;
+      margin-left: 25%;
+      margin-top: 1%;
+      /* margin-right: 0px; */
+    }
+    #search{
+        /* margin-left: 30%; */
+        height: 60px;
+        width: 400px;
+        border-radius: 6px;
+        margin-top: 1%;
+        /* margin-left: 0px; */
+        border: 1px solid #BDBDBD;
+        font-size: 90%;
+        /* margin-right: 60%; */
+    }
+    #right{
+        display: flex;
+        list-style-type: none;
+        column-gap: 30px;
+        
+    }
+    #rightmain{
+        width: 45%;
+        margin-right: 6%;
+        /* margin-top: 9px; */
+    }
+    #app{
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #supp{
+        text-decoration: none;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #profile{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #cart{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #app:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    #profile:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    .line1{
+        height: 30px;
+    }
+    .line2{
+        color: #BDBDBD;
+    }
+</style>
+<body>
+    <div id="top">
+        <div id="left">
+         <span><a href="" id="meesho"><img src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png" alt="" rel = "icon" width="25%"></span></a>
+        
+                
+           
+        </div>
+    </div>
+    <hr class="line2">
+    <div class="container">
+        <h1>Confirm Your Payment</h1>
+        <div class="first-row">
+            <div class="owner">
+                <h3>Name On Card</h3>
+                <div class="input-field">
+                    <input type="text" id="owner" required>
+                </div>
+            </div>
+            <div class="cvv">
+                <h3>CVV</h3>
+                <div class="input-field">
+                    <input type="text" id="cvv" required>
+                </div>
+            </div>
+        </div>
+        <div class="second-row">
+            <div class="card-number">
+                <h3>Card Number</h3>
+                <div class="input-field">
+                    <input type="text" id="cardnum" required>
+                </div>
+            </div>
+        </div>
+        <div class="third-row">
+            <h3>Card Expiry</h3>
+            <div class="selection">
+                <div class="date">
+                    <select name="months" id="months" required>
+                        <option value="Jan">Jan</option>
+                        <option value="Feb">Feb</option>
+                        <option value="Mar">Mar</option>
+                        <option value="Apr">Apr</option>
+                        <option value="May">May</option>
+                        <option value="Jun">Jun</option>
+                        <option value="Jul">Jul</option>
+                        <option value="Aug">Aug</option>
+                        <option value="Sep">Sep</option>
+                        <option value="Oct">Oct</option>
+                        <option value="Nov">Nov</option>
+                        <option value="Dec">Dec</option>
+                      </select>
+                      <select name="years" id="years">
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                      </select>
+                </div>
+                <div class="cards">
+                    <img src="https://www.logolynx.com/images/logolynx/38/38b8f2f2c2917b4118a8d0fc3ba1ed31.png" class="bord" alt="">
+                    <img src="http://pngimg.com/uploads/visa/visa_PNG10.png" alt="" >
+                    <img src="http://cdn.onlinewebfonts.com/svg/download_436832.png" alt="" class="bord">
+                </div>
+            </div>    
+        </div>
+        <a  href=""><button id="confirm-btn" onclick="confirmPay(event)" >Confirm</button> </a>
+    </div>
+</body>
+</html>
+<script>
+  // console.log(Name,Cvv,CardNum);
+    var flag=true;
+    function confirmPay(e)
+    {
+        
+   var Name = document.getElementById("owner").value;
+   var Cvv = document.getElementById("cvv").value;
+   var CardNum = document.getElementById("cardnum").value;
+        e.preventDefault();
+        if((Name !="" || Cvv !="" || CardNum != "" ) && flag==true )
+        {
+            flag=false;
+            swal("Congratulations!", "Payment Successfull", "success")
+            setTimeout(()=>window.location.href="summary.html",3000); 
+
+            
+
+                        
+        }else
+        {
+            swal("Oops!","please enter a valid details","warning")
+        }
+
+    }
+</script>

@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    #top{
+        width: 100%;
+        height: 70px;
+        /* border: 1px solid red; */
+        display: flex;
+        
+    }
+    #left{
+        display: flex;
+        width: 55%;
+    }
+    #meesho{
+      text-decoration: none;
+      font-size: 50px;
+      color: #F06292;
+      font-weight: bold;
+      margin-left: 25%;
+      margin-top: 1%;
+      /* margin-right: 0px; */
+    }
+    #search{
+        /* margin-left: 30%; */
+        height: 60px;
+        width: 400px;
+        border-radius: 6px;
+        margin-top: 1%;
+        /* margin-left: 0px; */
+        border: 1px solid #BDBDBD;
+        font-size: 90%;
+        /* margin-right: 60%; */
+    }
+    #right{
+        display: flex;
+        list-style-type: none;
+        column-gap: 30px;
+        
+    }
+    #rightmain{
+        width: 45%;
+        margin-right: 6%;
+        /* margin-top: 9px; */
+    }
+    #app{
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #supp{
+        text-decoration: none;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #profile{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #cart{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #app:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    #profile:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    .line1{
+        height: 30px;
+    }
+    .line2{
+        color: #BDBDBD;
+    }
+    #container{
+        width: 30%;
+        height: 600px;
+        /* border: 1px solid red; */
+        margin: auto;
+        margin-top: 3%;
+        /* border-radius: 10px; */
+    }
+    #btop{
+        width: 99.5%;
+        height: 210px;
+        border: 1px solid white;
+       margin: auto;
+       border-radius: 10px;
+    }
+    #btop > img{
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+    }
+    #bbottom{
+        width: 99%;
+        height: 390px;
+        border: 1px solid green;
+    }
+    #bbottom > h3{
+        font-size: 130%;
+        margin-top: 10%;
+        margin-left: 22%;
+    }
+    form > input,button{
+        width: 350px;
+        height: 40px;
+        margin-left: 10%;
+        margin-top: 3%;
+    }
+    form > button{
+        margin
+    }
+</style>
+<body>
+    
+    <div id="top">
+        <div id="left">
+         <span><a href="" id="meesho"><img src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png" alt="" rel = "icon" width="40%"></span></a>
+         <span><input type="search" id="search" placeholder="Try Saree,Kurti or Search by Product Code"> </span>  
+        </div>
+        <div id="rightmain">
+            <ul id="right">
+                <div id="app">
+                  <li><a href="" id="app"><i class="fas fa-mobile-alt"></i></a><a href="" id="app">Download App</a></li>
+
+                </div>
+                <hr class="line1">
+                <div id="supp">
+                  <li><a href="" id="supp">Become a Supplier</a></li>
+
+                </div>
+                <hr class="line1">
+                <!-- <div>
+                   <a href="" id="profile"><i class="far fa-user"></i></a>
+                  <li><a href="" id="profile">Profile</a></li>
+                </div>
+               
+                <hr class="line1">
+                <div>
+                  <a href="" id="cart"><i class="fas fa-shopping-cart"></i></a>
+                  <li><a href="cart.html" id="cart">Cart</a></li></li>
+                </div> -->
+                
+            </ul>
+        </div>
+    </div>
+    
+    <hr class="line2">
+    <div id="container">
+        <div id="btop">
+        <img src="https://meesho.com/_next/static/images/authTopBanner-6792b3e68f63d623b8ba99556d38d56d.jpg" />
+        </div>
+        <div id="bbottom">
+        <h3>Sign Up to view your Profile</h3>
+        <form>
+            <input id="name" placeholder="NAME"/>
+            <br>
+            <input id="email" placeholder="EMAIL"/>
+            <br>
+            <input id="pass" placeholder="PASSWORD"/>
+            <br>
+            <button></button>
+        </form>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+  #top > body{
+      back
+  }
+  #top{
+        width: 100%;
+        height: 70px;
+        /* border: 1px solid red; */
+        display: flex;
+        
+    }
+    #left{
+        display: flex;
+        width: 55%;
+    }
+    #meesho{
+      text-decoration: none;
+      font-size: 50px;
+      color: #F06292;
+      font-weight: bold;
+      margin-left: 25%;
+      margin-top: 1%;
+      /* margin-right: 0px; */
+    }
+    #search{
+        /* margin-left: 30%; */
+        height: 60px;
+        width: 400px;
+        border-radius: 6px;
+        margin-top: 1%;
+        /* margin-left: 0px; */
+        border: 1px solid #BDBDBD;
+        font-size: 90%;
+        /* margin-right: 60%; */
+    }
+    #right{
+        display: flex;
+        list-style-type: none;
+        column-gap: 30px;
+        
+    }
+    #rightmain{
+        width: 45%;
+        margin-right: 6%;
+        /* margin-top: 9px; */
+    }
+    #app{
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #supp{
+        text-decoration: none;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #profile{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #cart{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #app:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    #profile:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    .line1{
+        height: 30px;
+    }
+    .line2{
+        color: #BDBDBD;
+    }
+    .address{
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        margin-top: 5%;
+        box-shadow: 1px 1px 2px 0px gray;
+        width: 50%;
+        /* background-color: #FFEBEE; */
+        border: 1px solid white;
+    }
+    #logo{
+        font-size: 20px;
+        margin-left: 5%;
+        font-size: 150%;
+    }
+    #name,#pincode,#city,#state{
+        width: 30%;
+        padding: 1%;
+        margin-left: 5%;
+    }
+    #phone,#house,#road,#nearby{
+        width: 50%;
+        padding: 1%;
+        margin-left: 5%;
+    }
+    #comb{
+        display: flex;
+    }
+    #savebtn{
+        width: 50%;
+        margin: auto;
+        padding: 1%;
+        border: none;
+        background-color: #E91E63;
+        margin-bottom: 0.2%;
+        color: white;
+        font-size: 15px;
+        font-weight: bold;
+        margin-top: 4%;
+        margin-bottom: 4%;
+    }
+    #addd{
+        margin-left: 5%;
+        font-size: 150%;
+    }
+    #savebtn > button{
+        width: 200px;
+        height: 100px;
+    }
+</style>
+<body>
+  
+    <div id="top">
+        <div id="left">
+         <span><a href="" id="meesho"><img src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png" alt="" rel = "icon" width="25%"></span></a>
+        
+                
+           
+        </div>
+    </div>
+    <hr class="line2">
+
+<div class="address" >
+    <h5 id="logo"> <i class="fa fa-phone" aria-hidden="true"></i> Contact Details</h5>
+    <input type="text" id="name" placeholder="Name" required /><br>
+    <input type="text" name="" id="phone" placeholder="Phone Number" required /><br>
+    <h4 id="addd"> <i class="fa fa-map-marker" aria-hidden="true"> </i>&nbsp; Address </h4>
+    <input type="text" name="" id="house" placeholder="House No/Building Name" required /><br>
+    <input type="text" id="road" placeholder="Road Name / Area / Colony" required /><br>
+    <input type="text" id="pincode" placeholder="Pincode" required /><br>
+    <div id="comb"><input type="text" name="" id="city" placeholder="City" required>&nbsp; <input type="text" placeholder="State" id="state" required ><br></div>
+    <br>
+    <input type="text" id="nearby" placeholder="Nearby Location (Optional)"/><br>
+    <button onclick="saveAndSubmit(event)" id="savebtn">Save Address & Continue</button>
+</div>
+   
+    </div>
+</body>
+</html>
+<script>
+    function saveAndSubmit(e){
+        if(document.getElementById("name").value != null ||document.getElementById("phone").value != null ||document.getElementById("house").value != null||document.getElementById("city").value != null)
+        
+        {
+            window.location.href="payment.html";
+        }
+    }
+</script>

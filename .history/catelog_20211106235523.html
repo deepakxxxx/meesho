@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+      #main{
+        width: 100%;
+        height: 136px;
+        border: 1px solid white;
+        margin: auto;
+        /* position: fixed; */
+    }
+    #top{
+        width: 100%;
+        height: 70px;
+        /* border: 1px solid red; */
+        display: flex;
+        
+    }
+    #left{
+        display: flex;
+        width: 55%;
+    }
+    #meesho{
+      text-decoration: none;
+      font-size: 50px;
+      color: #F06292;
+      font-weight: bold;
+      margin-left: 25%;
+      margin-top: 1%;
+      /* margin-right: 0px; */
+    }
+    #search{
+        /* margin-left: 30%; */
+        height: 60px;
+        width: 400px;
+        border-radius: 6px;
+        margin-top: 1%;
+        /* margin-left: 0px; */
+        border: 1px solid #BDBDBD;
+        font-size: 90%;
+        /* margin-right: 60%; */
+    }
+    #right{
+        display: flex;
+        list-style-type: none;
+        column-gap: 30px;
+        
+    }
+    #rightmain{
+        width: 45%;
+        margin-right: 6%;
+        /* margin-top: 9px; */
+    }
+    #app{
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #supp{
+        text-decoration: none;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #profile{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #cart{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #app:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    #profile:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    .line1{
+        height: 30px;
+    }
+    .line2{
+        color: #BDBDBD;
+    }
+    #heading
+    {
+        width: 73%;
+        margin:  5% auto auto auto ;
+        display: grid;
+        grid-template-columns: 23% 54% 23%;
+        padding: 1%;
+        position: sticky;
+    }
+    #topic{
+        margin-top:-15px;
+        text-align: center;
+    }
+    #collection{
+        display: flex;
+        margin-left: 2%;
+        list-style-type: none;
+        font-size: 105%;
+        column-gap: 63px;
+        
+    }
+    ul > a{
+        text-decoration: none;
+        color: black;
+    }
+    ul > a :hover{
+        color: #EC407A;
+        /* text-decoration: underline; */
+    }
+    #container{
+        width: 80%;
+        border: 1px solid red;
+        margin: auto;
+        display: flex;
+        margin-top: 1%;
+        column-gap: 3%;
+    }
+    #smallImg{
+        width: 20%;
+        /* border: 1px solid blue; */
+        height: 300px;
+    }
+    .product_sneek_peek > img{
+        width: 100%;
+        height: 100%;
+    }
+    #bigImg{
+        width: 40%;
+        border: 1px solid #ECEFF1;
+        height: 750px;
+    }
+    #bigImg > img{
+        width: 100%;
+        height: 100%;
+    }
+    #descr{
+        width: 40%;
+        border: 1px solid #ECEFF1;
+        height: 1200px;
+    }
+    .product_sneek_peek{
+        width: 70px;
+        height: 70px;
+        border: 1px solid red;
+        margin-left: 69%;
+        border-radius: 5px;
+    }
+    #imgDi{
+        width: 99.5%;
+        height: 480px;
+        border: 1px solid #ECEFF1;
+    }
+    #addto{
+        width: 99.5%;
+        height: 60px;
+        border: 1px solid green;
+        margin-top: 5%;
+    }
+    #addto > button{
+        width: 100%;
+        height: 100%;
+        background-color: #EC407A;
+        font-size: 110%;
+        border-radius: 5px;
+    }
+    #similar{
+        width: 99.5%;
+        height: 200px;
+        border: 1px solid #ECEFF1;
+        margin-top: 5%;
+    }
+    #deta{
+        width: 99.5%;
+        height: 200px;
+        border: 1px solid white;
+        margin-left: 5%;
+    }
+    #sizes{
+        width: 99.5%;
+        height: 200px;
+        border: 1px solid blue;
+        margin-top: 3%;
+    }
+    #infor{
+        width: 99.5%;
+        height: 400px;
+        border: 1px solid white;
+        margin-top: 10%;
+        margin-left: 4%;
+        
+    }
+    #deler{
+        width: 99.5%;
+        height: 300px;
+        border: 1px solid #ECEFF1;
+        margin-top: 3%;
+    }
+    #similar > h3{
+        margin-left: 5%;
+        margin-top: 4%;
+    }
+    #simimg{
+        display: flex;
+        justify-content: center;
+    }
+    #simimg > img{
+        width: 70px;
+        height: 70px;
+    }
+    #deler > h3{
+        margin-top: 4%;
+        margin-left: 6%;
+        font-size: 160%;
+    }
+    #sho{
+        display: flex;
+        margin-left: 7%;
+        column-gap: 15%;
+        font-size: 110%;
+    }
+    #sho > button{
+        width: 100px;
+        height: 35px;
+        margin-top: 3%;
+        background-color: #EC407A;
+        border-radius: 5px;
+    }
+    #sho1{
+        display: flex;
+        margin-left: 6%;
+        column-gap: 3%;
+        border: 1px solid #e7eeff;
+        justify-content: center;
+        margin-right: 4%;
+        background-color: #e7eeff;
+        margin-top: 3%;
+        border-radius: 5px;
+    }
+    #deler > h4{
+        text-align: center;
+        margin-top: 8%;
+        font-size: 110%;
+    }
+    #sizes{
+        margin-left: 6%;
+    }
+    #sizz > button{
+        width: 60px;
+        height: 30px;
+    }
+</style>
+<body>
+    <div id="main">
+     
+        <div id="top">
+            <div id="left">
+             <span><a href="" id="meesho"><img src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png" alt="" rel = "icon" width="40%"></span></a>
+             <span><input type="search" id="search" placeholder="Try Saree,Kurti or Search by Product Code"> </span>  
+            </div>
+            <div id="rightmain">
+                <ul id="right">
+                    <div id="app">
+                      <li><a href="" id="app"><i class="fas fa-mobile-alt"></i></a><a href="" id="app">Download App</a></li>
+  
+                    </div>
+                    <hr class="line1">
+                    <div id="supp">
+                      <li><a href="" id="supp">Become a Supplier</a></li>
+  
+                    </div>
+                    <hr class="line1">
+                    <div>
+                       <a href="" id="profile"><i class="far fa-user"></i></a>
+                      <li><a href="" id="profile">Profile</a></li>
+                    </div>
+                   
+                    <hr class="line1">
+                    <div>
+                      <a href="" id="cart"><i class="fas fa-shopping-cart"></i></a>
+                      <li><a href="" id="cart">Cart</a></li></li>
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="line2">
+        <div id="secondLine">
+        <ul id="collection">
+            <a href="" class="same"><li>Women Ethnic</li></a>
+            
+            <a href="" class="same"><li>Women Western</li></a>
+            
+            <a href="" class="same"><li>Jewellery & Accessories</li></a>
+            <a href="" class="same"><li>Men</li></a>
+            <a href="" class="same"><li>Beauty & Health</li></a>
+            <a href="" class="same"><li>Bags & Footwear</li></a>
+            <a href="" class="same"><li>Home & Kitchen</li></a>
+            <a href="" class="same"><li>Kids</li></a>
+            <a href="" class="same"><li>Electronics</li></a>
+        </ul>
+      </div>
+      <hr class="line2">
+    </div>
+
+    <div id="container">
+        <div id="smallImg">
+            <div class="product_sneek_peek">
+                
+            </div>
+        </div>
+        <div id="bigImg">
+            <div id="imgDi">
+
+            </div>
+            <div id="addto">
+                <button><i class="fas fa-shopping-cart"></i>ADD TO CART</button>
+            </div>
+            <div id="similar">
+            <h3>5 Similar Products</h3>
+            <div id="simimg">
+                <img src="https://images.meesho.com/images/products/59272960/fddtp_512.jpg"/>
+                <img src="https://images.meesho.com/images/products/59272964/a4l8y_512.jpg"/>
+                <img src="https://images.meesho.com/images/products/59272962/azz7k_512.jpg"/>
+                <img src="https://images.meesho.com/images/products/59272963/a5qjv_512.jpg"/>
+                <img src="https://images.meesho.com/images/products/59272961/mx9tt_512.jpg"/>
+            </div>
+            </div>
+        </div>
+        <div id="descr">
+            <div id="deta"></div>
+            <div id="sizes">
+            <h2>Select size</h2>
+            <div id="sizz">
+                <button onclick="changecolor1()">M</button>
+                <button onclick="changecolor2()">L</button>
+                <button onclick="changecolor3()">S</button>
+                <button onclick="changecolor4()">XL</button>
+                <button onclick="changecolor5()">XXL</button>
+            </div>
+              
+            </div>
+            <div id="infor">
+                <h2>Product Details</h2>
+            </div>
+            <div id="deler">
+                <h3>Sold By</h3>
+                <div id="sho">
+                    <h3><i class="fas fa-store-alt"></i>Jai mata di garment</h3>
+                    <button>SHOP</button>
+                </div>
+                <div id="sho1">
+                <p>Lowest Price</p>
+                <hr>
+                <p>7-Days Returns</p>
+                <hr>
+                <p>Cash on Delivery</p>
+                </div>
+                <h4>Best Quality Products From Best Suppliers</h4>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var product = JSON.parse(localStorage.getItem("sibleProduct"));
+    // console.log(product);
+    displayItem(product)
+   
+
+
+
+    function displayItem(product){
+
+        
+        // document.querySelector("#dis").innerHTML = "";
+        // console.log(product)
+        product.map(function(item,index){
+
+            var smallimg = document.querySelector(".product_sneek_peek");
+    var bigimg = document.querySelector("#imgDi");
+    var des = document.querySelector("#deta");
+    var infor = document.querySelector("#infor");
+            // console.log(item)
+        var img1 = document.createElement("img");
+        img1.src = item.image;
+        
+        var img2 = document.createElement("img");
+        img2.src = item.image;
+        smallimg.append(img1)
+        bigimg.append(img2)
+
+        var titl = document.createElement("h2")
+        titl.textContent = item.title;
+        titl.style.color = "gray"
+        var price = document.createElement("h1");
+        price.textContent = `Rs. ${item.price}`;
+
+        var discount = document.createElement("p");
+        discount.textContent = item.discount;
+
+        var categ = document.createElement("p");
+        categ.textContent = "Free Delivery";
+        
+        des.append(titl,price,discount,categ)
+
+        var des = document.createElement("h3");
+        des.textContent = item.productDescription;
+        des.style.color = "gray"
+
+        infor.append(des)
+
+        });
+    }
+    function changecolor1(){
+        var sizzz = document.getElementById("sizz");
+        sizzz.style.
+    }
+</script>

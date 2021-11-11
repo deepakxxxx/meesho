@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<style>
+    #main{
+        width: 100%;
+        height: 136px;
+        border: 1px solid white;
+        margin: auto;
+        /* position: fixed; */
+    }
+    #top{
+        width: 100%;
+        height: 70px;
+        /* border: 1px solid red; */
+        display: flex;
+        
+    }
+    #left{
+        display: flex;
+        width: 55%;
+    }
+    #meesho{
+      text-decoration: none;
+      font-size: 50px;
+      color: #F06292;
+      font-weight: bold;
+      margin-left: 25%;
+      margin-top: 1%;
+      /* margin-right: 0px; */
+    }
+    #search{
+        /* margin-left: 30%; */
+        height: 60px;
+        width: 400px;
+        border-radius: 6px;
+        margin-top: 1%;
+        /* margin-left: 0px; */
+        border: 1px solid #BDBDBD;
+        font-size: 90%;
+        /* margin-right: 60%; */
+    }
+    #right{
+        display: flex;
+        list-style-type: none;
+        column-gap: 30px;
+        
+    }
+    #rightmain{
+        width: 45%;
+        margin-right: 6%;
+        /* margin-top: 9px; */
+    }
+    #app{
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #supp{
+        text-decoration: none;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #profile{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #cart{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #app:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    #profile:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    .line1{
+        height: 30px;
+    }
+    .line2{
+        color: #BDBDBD;
+    }
+    #heading
+    {
+        width: 73%;
+        margin:  5% auto auto auto ;
+        display: grid;
+        grid-template-columns: 23% 54% 23%;
+        padding: 1%;
+        position: sticky;
+    }
+    #topic{
+        margin-top:-15px;
+        text-align: center;
+    }
+    #collection{
+        display: flex;
+        margin-left: 2%;
+        list-style-type: none;
+        font-size: 105%;
+        column-gap: 63px;
+        
+    }
+    ul > a{
+        text-decoration: none;
+        color: black;
+    }
+    ul > a :hover{
+        color: #EC407A;
+        /* text-decoration: underline; */
+    }
+    #topleft{
+        margin-left: 5%;
+        margin-top: 0px;
+        line-height: 15px;
+    }
+    #topleft > h3{
+        color: black;
+    }
+    #display {
+        width: 99%;
+        display: grid;
+        grid-template-columns: 22% 22% 22% 22%;
+        grid-gap: 1%;
+        justify-content: center;
+        margin-top: 2%;
+       row-gap: 1.5%;
+      }
+     #mainDiv{
+         /* border: 1px solid red; */
+         height: 500px;
+         border-radius: 8px;
+     }
+     #prodimg{
+         width: 100%;
+         height: 60%;
+         border: 1px solid #E0E0E0;
+         border-radius: 9px;
+     }
+     #imgD{
+         width: 100%;
+         height: 100%;
+     }
+     #textDiv{
+         width: 100%;
+         height: 39%;
+         border: 1px solid #E0E0E0;
+     }
+     #textDiv > h2{
+         margin-left: 3%;
+         font-size: 125%;
+         color: gray;
+         line-height: 10px;
+     }
+     #textDiv > p{
+         margin-left: 3%;
+         font-size: 95%;
+         line-height: 15px;
+     }
+     #textDiv > h2+p > p{
+       color: gray;
+     }
+     #textDiv > h2+p{
+         font-size: 170%;
+         font-weight: bold;
+     }
+</style>
+<body>
+    <div id="main">
+     
+        <div id="top">
+            <div id="left">
+             <span><a href="" id="meesho"><img src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png" alt="" rel = "icon" width="40%"></span></a>
+             <span><input type="search" id="search" placeholder="Try Saree,Kurti or Search by Product Code"> </span>  
+            </div>
+            <div id="rightmain">
+                <ul id="right">
+                    <div id="app">
+                      <li><a href="" id="app"><i class="fas fa-mobile-alt"></i></a><a href="" id="app">Download App</a></li>
+  
+                    </div>
+                    <hr class="line1">
+                    <div id="supp">
+                      <li><a href="" id="supp">Become a Supplier</a></li>
+  
+                    </div>
+                    <hr class="line1">
+                    <div>
+                       <a href="" id="profile"><i class="far fa-user"></i></a>
+                      <li><a href="" id="profile">Profile</a></li>
+                    </div>
+                   
+                    <hr class="line1">
+                    <div>
+                      <a href="" id="cart"><i class="fas fa-shopping-cart"></i></a>
+                      <li><a href="" id="cart">Cart</a></li></li>
+                    </div>
+                    
+                </ul>
+            </div>
+        </div>
+        
+        <hr class="line2">
+        <div id="secondLine">
+        <ul id="collection">
+            <a href="" class="same"><li>Women Ethnic</li></a>
+            
+            <a href="" class="same"><li>Women Western</li></a>
+            
+            <a href="" class="same"><li>Jewellery & Accessories</li></a>
+            <a href="" class="same"><li>Men</li></a>
+            <a href="" class="same"><li>Beauty & Health</li></a>
+            <a href="" class="same"><li>Bags & Footwear</li></a>
+            <a href="" class="same"><li>Home & Kitchen</li></a>
+            <a href="" class="same"><li>Kids</li></a>
+            <a href="" class="same"><li>Electronics</li></a>
+        </ul>
+      </div>
+      <hr class="line2">
+    </div>
+    <div id="topleft">
+        <h1>Top Wear</h1>
+        <h3>Showing 1-20 out of 92660 Products</h3>
+        
+    </div>
+    <div id="display"></div>
+</body>
+</html>
+<script>
+var sibil = JSON.parse
+
+   var data = [
+   {
+    "id": 1,
+    "title": "Organic Chics Sleeveless",
+    "category": "Inner wear",
+    "discount":"100% discount on first order",
+    "price": "570",
+    "image": "https://images.meesho.com/images/products/59134618/taxtw_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 2,
+    "title": "tshirts",
+    "category": "T-shirt",
+    "discount":"100% discount on first order",
+    "price": "726",
+    "image": "https://images.meesho.com/images/products/59141619/csdkx_512.jpg",
+   
+    "productDescription": "Sweatshirts for Men are one of the most comfortable outfits to wear and carry around during the winter time."
+  },
+  {
+    "id": 3,
+    "title": "Shirts",
+    "category": "shirt",
+    "discount":"100% discount on first order",
+    "price": "800",
+    "image": "https://images.meesho.com/images/products/59137402/djhjh_512.jpg",
+   
+    "productDescription": "Sweatshirts for Men are one of the most comfortable outfits to wear and carry around during the winter time."
+  },
+  {
+    "id": 4,
+    "title": "Trendy Men Shirt",
+    "category": "Cotton Blend",
+    "discount":"100% discount on first order",
+    "price": "224",
+    "image": "https://images.meesho.com/images/products/59119658/46elk_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 5,
+    "title": "Mens shirt",
+    "category": "art silk",
+    "discount":"100% discount on first order",
+    "price": "227",
+    "image": "https://images.meesho.com/images/products/59123753/yswgg_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 6,
+    "title": "Black tshirt Sky Blue tshirt",
+    "category": "tshirt",
+    "discount":"100% discount on first order",
+    "price": "304",
+    "image": "https://images.meesho.com/images/products/59129772/qrgfl_512.jpg",
+   
+    "productDescription": "Look your stylish best in this trendy t-shirt from the latest collection. The youthful design, high-quality pollycotton fabric."
+  },
+  {
+    "id": 7,
+    "title": "Organic Chics Sleeveless",
+    "category": "Inner wear",
+    "discount":"100% discount on first order",
+    "price": "720",
+    "image": "https://images.meesho.com/images/products/59124919/qclzf_512.jpg",
+   
+    "productDescription": "Sweatshirts for Men are one of the most comfortable outfits to wear and carry around during the winter time."
+  },
+  {
+    "id": 8,
+    "title": "Men's Stylish Tshirt",
+    "category": "tshirt",
+    "discount":"100% discount on first order",
+    "price": "720",
+    "image": "https://images.meesho.com/images/products/59132724/e3ji8_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 9,
+    "title": "Sleeve Shirt - Mango Yellow",
+    "category": "shirt",
+    "discount":"100% discount on first order",
+    "price": "623",
+    "image": "https://images.meesho.com/images/products/59118569/iivtz_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 10,
+    "title": "Trendy Men's Cotton T-Shirt",
+    "category": "cotton",
+    "discount":"100% discount on first order",
+    "price": "125",
+    "image": "https://images.meesho.com/images/products/6881411/34d6d_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 11,
+    "title": "Men's Half Sleeve Collor T-Shirt",
+    "category": "Short Sleeves",
+    "discount":"100% discount on first order",
+    "price": "227",
+    "image": "https://images.meesho.com/images/products/59139945/i75qq_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 12,
+    "title": "Dark Blue Full Sleeves Cool Shirt",
+    "category": "shirt",
+    "discount":"100% discount on first order",
+    "price": "215",
+    "image": "https://images.meesho.com/images/products/59112079/rjak4_512.jpg",
+   
+    "productDescription": "It is important to look good everyday, than to look different everyday."
+  },
+  {
+    "id": 13,
+    "title": "Stylish Latest Men Active Tshirts",
+    "category": "tshirt",
+    "discount":"100% discount on first order",
+    "price": "397",
+    "image": "https://images.meesho.com/images/products/59119747/tydbk_512.jpg",
+   
+    "productDescription": "For an remembrable occasion you can gift. One Last Heist Half Sleeve T-Shirt."
+  },
+  {
+    "id": 14,
+    "title": "tshirt",
+    "category": "Polycon",
+    "discount":"100% discount on first order",
+    "price": "234",
+    "image": "https://images.meesho.com/images/products/57704408/neeon_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 15,
+    "title": "John Willis T-shirt",
+    "category": "tshirt",
+    "discount":"100% discount on first order",
+    "price": "178",
+    "image": "https://images.meesho.com/images/products/59125744/cirdl_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 16,
+    "title": "TSHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "940",
+    "image": "https://images.meesho.com/images/products/59271962/af0fz_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 17,
+    "title": "TSHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "441",
+    "image": "https://images.meesho.com/images/products/55026985/n1rk0_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 18,
+    "title": "TSHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "290",
+    "image": "https://images.meesho.com/images/products/59271927/ksolr_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 19,
+    "title": "SHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "900",
+    "image": "https://images.meesho.com/images/products/59271140/fjvbs_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 20,
+    "title": "TSHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "470",
+    "image": "https://images.meesho.com/images/products/59271501/scwit_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 21,
+    "title": "SPORTS TSHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "450",
+    "image": "https://images.meesho.com/images/products/59272151/xgugy_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 22,
+    "title": "SHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "800",
+    "image": "https://images.meesho.com/images/products/51748266/gqg10_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 23,
+    "title": "BRAND SHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "194",
+    "image": "https://images.meesho.com/images/products/49757580/9wikz_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },{
+    "id": 24,
+    "title": "SHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "365",
+    "image": "https://images.meesho.com/images/products/59271751/0aboj_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 25,
+    "title": "DESIGN SHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "555",
+    "image": "https://images.meesho.com/images/products/58642687/yuaxi_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 26,
+    "title": "SHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "245",
+    "image": "https://images.meesho.com/images/products/59094356/d4d0e_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 27,
+    "title": "SPORTS TSHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "963",
+    "image": "https://images.meesho.com/images/products/59273630/iasre_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },
+  {
+    "id": 28,
+    "title": "SHIRT",
+    "category": "TSHIRT",
+    "discount":"100% discount on first order",
+    "price": "159",
+    "image": "https://images.meesho.com/images/products/59060017/dhtkl_512.jpg",
+   
+    "productDescription": "This cool Round Neck Sleeveless Men's Solid Vest is made from 100% premium super combed cotton which is pre-shrunk and bio-washed for longevity and is a perfect treat for Men & Boys who like to hit the gym in style."
+  },];
+
+console.log(data);
+
+var display = document.getElementById("display");
+showProducts() 
+
+function showProducts() {
+    data.map(function (item) {
+        var mainDiv = document.createElement("div")
+        mainDiv.setAttribute("id","mainDiv")
+      var imageDiv = document.createElement("div");
+      imageDiv.setAttribute("id","prodimg")
+      var textDiv = document.createElement("div")
+      textDiv.setAttribute("id","textDiv")
+      var img = document.createElement("img");
+      img.setAttribute("src", item.image);
+      img.setAttribute("id","imgD")
+      
+      var title = document.createElement("h2");
+      title.textContent = item.title;
+      title.addEventListener("click", function () {
+          //console.log(item.id);
+          console.log(item.id);
+          localStorage.setItem("sibleProduct", JSON.stringify(item.id));
+          // window.location.assign("./cateloge.html");
+        }) ;
+
+      var categ = document.createElement("p");
+      categ.textContent = "Free Delivery";
+ 
+    var discount = document.createElement("p");
+    discount.textContent = item.discount;
+    
+    var price = document.createElement("p");
+    price.textContent = `Rs. ${item.price}`
+
+      textDiv.append(title,price,discount,categ) 
+      imageDiv.append(img);
+    mainDiv.append(imageDiv,textDiv)
+      display.append(mainDiv);
+    });
+  }
+
+
+</script>
+
+
+
+
+   

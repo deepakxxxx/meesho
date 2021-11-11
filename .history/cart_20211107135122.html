@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+#top{
+        width: 100%;
+        height: 70px;
+        /* border: 1px solid red; */
+        display: flex;
+        
+    }
+    #left{
+        display: flex;
+        width: 55%;
+    }
+    #meesho{
+      text-decoration: none;
+      font-size: 50px;
+      color: #F06292;
+      font-weight: bold;
+      margin-left: 25%;
+      margin-top: 1%;
+      /* margin-right: 0px; */
+    }
+    #search{
+        /* margin-left: 30%; */
+        height: 60px;
+        width: 400px;
+        border-radius: 6px;
+        margin-top: 1%;
+        /* margin-left: 0px; */
+        border: 1px solid #BDBDBD;
+        font-size: 90%;
+        /* margin-right: 60%; */
+    }
+    #right{
+        display: flex;
+        list-style-type: none;
+        column-gap: 30px;
+        
+    }
+    #rightmain{
+        width: 45%;
+        margin-right: 6%;
+        /* margin-top: 9px; */
+    }
+    #app{
+        text-decoration: none;
+        margin-left: 10px;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #supp{
+        text-decoration: none;
+        margin-top: 9px;
+        font-size: 103%;
+        color: black;
+    }
+    #profile{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #cart{
+        text-decoration: none;
+        font-size: 103%;
+        color: black;
+    }
+    #app:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    #profile:hover{
+        color: #EC407A;
+        text-decoration: underline;
+    }
+    .line1{
+        height: 30px;
+    }
+    .line2{
+        color: #BDBDBD;
+    }
+    #container{
+      width: 60%;
+      
+      border: 1px solid white;
+      margin: auto;
+      display: flex;
+    }
+    #bleft{
+      width: 50%;
+      height: 200px;
+      border: 1px solid white;
+    }
+    #bright{
+      width: 50%;
+      height: 500px;
+      border: 1px solid white;
+    }
+    #tlitem{
+      width: 95%;
+      height: 50px;
+      border: 1px solid white;
+      display: flex;
+      column-gap: 10%;
+    }
+    #tlitem{
+      margin-left: 4%;
+    }
+    #shownoitem{
+      margin-right: 90%;
+      color: gray;
+    }
+    #smaimg{
+      width: 99.5%;
+      height: 100px;
+      border: 1px solid r#BDBDBD;
+      display: flex;
+      justify-content: center;
+    }
+    #btext{
+      width: 99.5%;
+      height: 46px;
+      border: 1px solid #BDBDBD;
+    }
+    #btext > h3{
+      color: gray;
+      margin-left: 4%;
+    }
+    #sneekimg{
+      width: 25%;
+      height: 99.5%;
+      border: 1px solid #BDBDBD;
+      border-radius: 8px;
+    }
+    #sneekimg > img{
+      width: 100%;
+      height: 100%;
+    }
+    #deta{
+      width: 70%;
+      height: 99.5%;
+      border: 1px solid #BDBDBD;
+    }
+    #deta > h3{
+      margin-left: 6%;
+    }
+    #dele{
+      width: 20%;
+      height: 99.5%;
+      border: 1px solid #BDBDBD;
+    }
+    #flexx1{
+      display: flex;
+     margin-left: 4%;
+     color: gray;
+    }
+    #flexx2{
+      display: flex;
+     margin-left: 4%;
+     color: gray;
+    }
+    #flexx3{
+      display: flex;
+     margin-left: 4%;
+     color: gray;
+    }
+    #flexx4{
+      display: flex;
+     margin-left: 4%;
+     color: gray;
+    }
+    #flexx1 > h3 + h3{
+      margin-left: 30%;
+    }
+    #flexx2 > h3 + h3{
+      margin-left: 30%;
+    }
+    #flexx3 > h3 + h3{
+      margin-left: 19%;
+    }
+    #flexx4 > h3 + h3{
+      margin-left: 41%;
+    }
+    #addbtn{
+      width: 99.5%;
+      height: 50px;
+      border: 1px solid white;
+      
+    }
+    #addbtn > button{
+      width: 90%;
+      height: 49px;
+      font-size: 120%;
+     border-radius: 6px;
+     margin-left: 4%;
+     background-color: #EC407A;
+    }
+    #limg{
+      width: 99.5%;
+      height: 125px;
+      border: 1px solid white;
+      margin-top: 2%;
+    }
+    
+    #dele > button{
+      margin-top: 15%;
+      margin-left: 15%;
+    }
+</style>
+<body>
+    <div id="top">
+          <div id="left">
+           <span><a href="" id="meesho"><img src="https://cdn.hevodata.com/customer/logo/8c76f62bd88177a78bb6e2810a244446.png" alt="" rel = "icon" width="25%"></span></a>
+          
+                  
+             
+          </div>
+      </div>
+      <hr class="line2">
+
+      <div id="container">
+          <div id="bleft">
+             <div id="tlitem">
+               <div>
+                 <h3>Cart</h3>
+               </div>
+               <hr>
+               <div id="shownoitem">
+                 <h3>Item</h3>
+               </div>
+             </div>
+             <div id="smaimg">
+             <div id="sneekimg">
+
+             </div>
+             <div id="deta">
+
+             </div>
+             <div id="dele">
+             <button>EDIT</button>
+             </div>
+             </div>
+             <div id="btext">
+             <h3>Supplier: PK World India</h3>
+             </div>
+          </div>
+          <hr style="height: 280px;margin-left: 1%;">
+          <div id="bright">
+            <div>
+              <h3 style="margin-left: 4%;">Price Details</h3>
+              <div id="flexx1">
+              <h3>Product Charges</h3>
+              <h3>Rs.0</h3>
+              <h3 id="oprice"></h3>
+              </div>
+              <div id="flexx2">
+              <h3>Delivery Charges</h3>
+              <h3>Rs.0</h3>
+              </div>
+              <div id="flexx3">
+              <h3>First Order Discounts</h3>
+              <h3> - Rs.100</h3>
+              </div>
+              <hr>
+              <div id="flexx4">
+              <h3>Order Total</h3>
+              <h3>Rs.0</h3>
+              </div>
+            </div>
+            <div id="addbtn">
+              <button>Continue</button>
+            </div>
+            <div id="limg">
+              <img src="https://images.meesho.com/images/marketing/1588578650850.png"/>
+            </div>
+          </div>
+      </div>
+</body>
+</html>
+<script>
+ var cartItem = JSON.parse(localStorage.getItem("cartItems"));
+//  console.log(product);
+displayItem(cartItem)
+function displayItem(product){
+product.map(function(item,index){
+  var smalllimg = document.querySelector("#sneekimg");
+  var detaitex = document.querySelector("deta");
+
+  var img1 = document.createElement("img");
+  img1.src= item.image;
+
+  
+  var titl = document.createElement("h3")
+        titl.textContent = item.title;
+        titl.style.color = "gray"
+        var price = document.createElement("h3");
+        price.textContent = `Rs. ${item.price}`;
+
+      
+
+        deta.append(titl,price)
+
+  smalllimg.append(img1)
+});
+var total = cartItem.reduce(function(acc,cv){
+           return acc+ Number(cv.price);
+       },0)
+
+       document.getElementById("totl").innerHTML = `<h1>Total price is ${total}</h1>`
+       document.getElementById("itmm").innerHTML = `<h1>Total item is ${cartItem.length}</h1>`
+}
+</script>
+
+
+
+
+   
